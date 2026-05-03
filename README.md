@@ -17,6 +17,16 @@ Git’s **`pre-commit`** hook runs before the commit is recorded and does not re
 
 If you use the [pre-commit](https://pre-commit.com/) framework, register this script on the **`commit-msg` stage** (see below).
 
+## Commit message template (50/72 reminder)
+
+This repo includes [`.gitmessage`](.gitmessage): when you run `git commit`, your editor can open with a short checklist (as commented lines Git strips out). Point Git at it from the repository root:
+
+```sh
+git config commit.template .gitmessage
+```
+
+Or set it only for this clone: `git config --local commit.template .gitmessage`.
+
 ## Install as a Git `commit-msg` hook
 
 From your repository root (adjust the path if you move the script):

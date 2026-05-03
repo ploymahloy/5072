@@ -1,0 +1,6 @@
+
+# 50/72 (see README / 5072.py if you use the commit-msg hook)
+#
+# • Line 1 — subject: ≤50 characters. Imperative mood (“Add…”, “Fix…”); skip a trailing period.
+# • Line 2 — blank (separates subject from body).
+# • Line 3+ — body (optional): ≤72 characters per line; explain what and why.
