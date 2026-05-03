@@ -1,4 +1,4 @@
-# commit_msg_50_72
+# 5072
 
 A small Python checker for Git commit messages that enforces the **50/72 rule**:
 
