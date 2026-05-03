@@ -25,7 +25,7 @@ From your repository root (adjust the path if you move the script):
 mkdir -p .git/hooks
 cat > .git/hooks/commit-msg <<'EOF'
 #!/bin/sh
-exec python3 "$(git rev-parse --show-toplevel)/commit_msg_50_72.py" "$1"
+exec python3 "$(git rev-parse --show-toplevel)/5072.py" "$1"
 EOF
 chmod +x .git/hooks/commit-msg
 ```
@@ -42,7 +42,7 @@ repos:
     hooks:
       - id: commit-msg-50-72
         name: 50/72 commit message
-        entry: python3 commit_msg_50_72.py
+        entry: python3 5072.py
         language: system
         stages: [commit-msg]
         always_run: true
@@ -65,7 +65,7 @@ The first line is the subject (≤ 50 characters). A blank line separates the bo
 
 ```sh
 printf '%s\n' 'Short subject' > /tmp/msg.txt
-python3 commit_msg_50_72.py /tmp/msg.txt && echo OK
+python3 5072.py /tmp/msg.txt && echo OK
 ```
 
 The script exits `0` if the message is valid and `1` if not, printing details to stderr.

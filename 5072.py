@@ -9,10 +9,10 @@ Lines that Git treats as comments (optional leading whitespace, then '#') are
 ignored, matching what Git strips from the final message.
 
 Usage (Git commit-msg hook):
-    commit_msg_50_72.py "$1"
+    5072.py "$1"
 
 Usage (pre-commit framework, .pre-commit-config.yaml):
-    entry: python commit_msg_50_72.py
+    entry: python 5072.py
     language: system
     stages: [commit-msg]
     always_run: true
